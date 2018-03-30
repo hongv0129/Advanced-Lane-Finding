@@ -23,20 +23,20 @@ Here I will consider the rubric points individually and describe how I addressed
 My project includes the following files:
 
 * **MachineVision.py** - containing the following classes and functions:( Note: `MachineVision` imported as `Mv` )  
-** -- [1] Class for Camera Calibration, Image Undistortion & Perspective Transformation**
+** [1] Class for Camera Calibration, Image Undistortion & Perspective Transformation**
 ```
 class ImageGeometric:
     draw_chessboard_corners()
     calibrate_and_undistort()
     warp_image_to_top_down_view()
 ```
-** -- [2] Functions to Apply Mask of Color Thresholds & Gradient Threholds**
+** [2] Functions to Apply Mask of Color Thresholds & Gradient Threholds**
 ```
 Global functions under MachineVision.py:
     get_mask_color_threshold()
     get_mask_gradient_thresholds()
 ```
-** -- [3] Class for Lane Detection **
+** [3] Class for Lane Detection **
 ```
 class Line:
     update_status()
@@ -46,7 +46,7 @@ class LaneDetector:
     scan_partial_image_for_lane()
     find_lane_lines()
 ```
-** -- [4] Functions to visualize results  **
+** [4] Functions to visualize results  **
 ```
     show_histogram_for_lane_base()
     get_ploty_of_detected_lane()
@@ -54,7 +54,7 @@ class LaneDetector:
     draw_lane_on_org_image()
     show_data_on_org_image()
 ```
-** -- [5] Functions to sanity check, and measure curvature & center offset  **
+** [5] Functions to sanity check, and measure curvature & center offset  **
 ```
     check_lane_sanity()
     measure_curvature_n_center_offset()
@@ -64,7 +64,7 @@ class LaneDetector:
   
 * **ProcessVideo.py** - the program in this file utilizes the functions in MachineVision.py to process Video ```project_video.mp4``` and generate the lane-marked video ```project_video_lane_marked.mp4```
   
-* **./output_images/*.* ** - images for demo, after ```./test_images/*.*``` processed by ```ProcessImages.py```
+* **./output_images/xxx/xxx.jpg ** - images for demo, after ```./test_images/*.*``` processed by ```ProcessImages.py```
   
 * **./project_video_lane_marked.mp4**, video for demo, after ```project_video.mp4``` processed by ```ProcessVideo.py```
 
@@ -228,7 +228,7 @@ Here's the link to the demo video for lane detection:
 
 ---
 ### Visualization of Pipeline Steps 
-![CenterPic](./ReadmeData/overview.png)
+![CenterPic](./ReadmeData/Overview.PNG)
 
 ---
 ### Discussion
