@@ -22,7 +22,8 @@ Here I will consider the rubric points individually and describe how I addressed
 
 My project includes the following files:
 
-* **MachineVision.py** - containing the following classes and functions:( Note: `MachineVision` imported as `Mv` )  
+* **MachineVision.py** - containing the following classes and functions:( Note: `MachineVision` imported as `Mv` )   
+
 ** [1] Class for Camera Calibration, Image Undistortion & Perspective Transformation**
 ```
 class ImageGeometric:
@@ -64,7 +65,7 @@ class LaneDetector:
   
 * **ProcessVideo.py** - the program in this file utilizes the functions in MachineVision.py to process Video ```project_video.mp4``` and generate the lane-marked video ```project_video_lane_marked.mp4```
   
-* **./output_images/xxx/xxx.jpg ** - images for demo, after ```./test_images/*.*``` processed by ```ProcessImages.py```
+* **./output_images/xxx/xxx.jpg** - images for demo, after ```./test_images/*.*``` processed by ```ProcessImages.py```
   
 * **./project_video_lane_marked.mp4**, video for demo, after ```project_video.mp4``` processed by ```ProcessVideo.py```
 
@@ -211,8 +212,9 @@ Output Images located at:
 ---
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
-The lane marking and curvature radius data recording on the original images is implmemented in the following functions:  
-`MachineVision.py - LaneDetector.scan_entire_image_for_lane()`  
+Curvature radius display and lane marking on the original images is implemented in the following functions:  
+`MachineVision.py - draw_lane_on_org_image()`  
+`MachineVision.py - show_data_on_org_image()`  
 
 **Below is an example(generated from test5.jpg)**:
 ![CenterPic](./ReadmeData/07_10PipeLine_Resize.jpg)
